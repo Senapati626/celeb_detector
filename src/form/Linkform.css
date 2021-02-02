@@ -1,0 +1,42 @@
+.center1{
+    overflow: hidden;
+}
+.form{
+    width: 700px;
+    margin: 1rem;
+}
+.form input{
+    background: blanchedalmond;
+    color: #000;
+}
+.form input:checked{
+  border: 14px solid rgb(0, 255, 191);
+}
+.btn {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  display: block;
+  position: relative;
+  background-color: #ae26fc;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 25px 80px;
+  margin: 0 auto;
+  border-radius: 20px;
+  box-shadow: 0 6px #390153;
+  margin-bottom: 1rem;
+}
+
+.btn:hover {
+  top: 2px;
+  box-shadow: 0 4px #390153;
+}
+
+.btn:active {
+  box-shadow: none;
+  top: 6px;
+}

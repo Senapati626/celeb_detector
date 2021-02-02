@@ -1,0 +1,21 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.heading1{
+    font-size: 2.5rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-family: 'Holtwood One SC', serif;
+    color: cornsilk;
+    z-index: 2;
+}
+
+@media screen and (min-width: 992px){
+    .heading1{
+        font-size: 3.8rem;
+    }
+}

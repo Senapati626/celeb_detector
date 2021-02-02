@@ -1,0 +1,37 @@
+.boundingbox{
+    position: absolute;
+    box-shadow: 0 0 0 5px rgb(243, 126, 198) inset;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    cursor: pointer;
+}
+.imager{
+    height: auto;
+    border-radius: 20px;
+    align-self: center;
+    width: 500px;
+    filter: none;
+    transition: filter 1s ease-in-out;
+}
+.absolute{
+    display: flex;
+    justify-content: center;
+    max-width: 200%;
+}
+.imager:hover{
+    filter: grayscale();
+}
+@media only screen and (min-width: 992px){
+    .mt3{
+        width: 50%;
+    }
+    .imager{
+        width: fit-content;
+        height: auto;
+        min-width: 500px;
+    }
+    .ma{
+        margin-bottom: 10px;
+    }
+}

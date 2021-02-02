@@ -1,0 +1,91 @@
+.howto{
+    position: absolute;
+    left: 0%;
+    z-index: 999;
+}
+.icon{
+    margin: 0.8em;
+}
+.icon1{
+    color: #ff6347;
+    background: wheat;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.5s ease-in-out;
+    }
+.icon1 p{
+    font-size: 2rem;
+    font-weight: bolder;
+}
+.icon1:hover{
+    transform: scale(1.3);
+}
+.icon2{
+    display: none;
+    place-items: center;
+    cursor: pointer;
+}
+.icon2 p:hover{
+    animation: cross 0.5s;
+}
+.icon2 p{
+    font-size: 3rem;
+    font-weight: bolder;
+    background: transparent;
+    color: rgb(151, 5, 151);
+    justify-self: end;
+    transition: transform 1s ease-in-out;
+}
+.navbar{
+    display: none;
+    grid-template-rows: 5% 10% 20% auto;
+    grid-row-gap: 1rem;
+    background: linear-gradient(to right,#47ffb8,#4cc093);
+    margin-top: -15px;
+    overflow: auto;
+    width: 500px;
+    opacity: 0.85;
+    padding: 1em;
+    transition: all 0.5s;
+    height: 200%;
+    min-height: 100vh;
+    border-radius: 10px;
+
+}
+.navbar h1{
+    font-family: 'Cinzel Decorative', cursive;
+    justify-items: flex-start;
+    font-size: 3rem;
+}
+.navbar div:nth-child(3){
+    display: grid;
+    margin-top: 20vh;
+}
+.navbar ul{
+    list-style: none;
+    text-align: left;
+}
+.navbar ul li {
+    font-size: 1.5rem;          
+    padding: 1em;
+}
+
+@keyframes cross{
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(180deg);
+    }
+}
+
+@media only screen and (max-width: 992px){
+    .icon{
+        transform: scale(0.6);
+    }
+}
