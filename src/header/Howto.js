@@ -4,19 +4,29 @@ import './howto.css';
 class Howto extends React.Component {
   iconClick = () => {
     const list = document.getElementsByClassName("navbar")[0];
-    const icon1 = document.getElementsByClassName("icon")[0];
-    const icon2 = document.getElementsByClassName("icon2")[0];
-    list.style.display = "grid";
-    icon1.style.display = "none";
-    icon2.style.display = "grid";
+    var pos = -500;
+    var id= setInterval(frame, 0.5);
+    function frame(){
+      if(pos === 0){
+        clearInterval(id);
+      } else{
+        pos ++;
+        list.style.left = pos + 'px';
+      }
+    }
   };
   icon2Click = () => {
     const list = document.getElementsByClassName("navbar")[0];
-    const icon1 = document.getElementsByClassName("icon")[0];
-    const icon2 = document.getElementsByClassName("icon2")[0];
-    list.style.display = "none";
-    icon1.style.display = "flex";
-    icon2.style.display = "none";
+    var pos2 = 0;
+    var id= setInterval(frame, 0.5);
+    function frame(){
+      if(pos2 === 500){
+        clearInterval(id);
+      } else{
+        pos2 ++;
+        list.style.left = - pos2 + 'px';
+      }
+    }
   };
     render(){
     return(
