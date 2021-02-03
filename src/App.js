@@ -51,7 +51,7 @@ class App extends Component {
 
   onButtonClick = () => {
     this.setState({imageUrl: this.state.input});
-    if(Images.indexOf(this.state.input) === -1 && this.state.solution.length){
+    if(Images.indexOf(this.state.input) === -1 && this.state.solution.length !== 0){
     Images.push(this.state.input);
     }
     app.models.predict(Clarifai.FACE_DETECT_MODEL, this.state.input)
