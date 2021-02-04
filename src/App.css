@@ -11,11 +11,10 @@
   text-align: center;
   display: grid;
   place-items: center;
-  grid-template-rows: 8% auto 10% auto;
-  grid-template-areas: "header", "sample", "form", "recog";
+  grid-template-rows: 8% auto 10% auto 1%;
+  grid-template-areas: "header", "sample", "form", "recog" "footer";
   grid-row-gap: 60px;
   min-height: 100vh;
-  max-height: 1080px;
   max-width: 100vw;
   margin-inline: 30px;
 }
@@ -75,6 +74,17 @@ header {
   min-height: 500px;
   height: 100%;
   margin-top: 45vh;
+}
+footer{
+  bottom: 0;
+  grid-area: "footer";
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+}
+footer p{
+  font-size: 1rem;
 }
 
 @media only screen and (min-width: 1025px){
