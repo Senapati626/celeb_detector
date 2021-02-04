@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './App.css';
-import {FaHeart} from 'react-icons/fa';
 import Clarifai from 'clarifai';
 import Header from './header/Header';
 import Linkform from './form/Linkform';
@@ -103,10 +102,6 @@ render(){
           )
         }
       </section>
-      <footer>
-        <h3>Designed and developed with <FaHeart/></h3>
-        <p>by Neellohit S.</p>
-      </footer>
     </div>
   );
 }

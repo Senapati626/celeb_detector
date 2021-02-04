@@ -70,6 +70,12 @@
     font-size: 1.5rem;          
     padding: 1em;
 }
+.footer{
+    display: grid;
+    place-items: center;
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+}
 @media only screen and (max-width: 992px){
     .icon{
         transform: scale(0.6);

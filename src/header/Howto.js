@@ -1,5 +1,6 @@
 import React from "react";
 import './howto.css';
+import {FaHeart} from 'react-icons/fa';
 
 class Howto extends React.Component {
   iconClick = () => {
@@ -44,7 +45,12 @@ class Howto extends React.Component {
                     <li>3. You can also use the sample images.</li>
                     <li>4. Once you are ready, press the <b>Detect</b> button and wait for a moment.</li>
                     <li>5. The app would detect the person in the image through Tensorflow analysis. </li>
-                </ul></div>
+                </ul>
+                <div className="footer">
+                  <h3>Designed and developed with <FaHeart/></h3>
+                  <p>by Neellohit S.</p>
+                </div>
+                </div>
             </div>
         </div>
     )

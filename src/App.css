@@ -11,8 +11,8 @@
   text-align: center;
   display: grid;
   place-items: center;
-  grid-template-rows: 8% auto 10% auto 1%;
-  grid-template-areas: "header", "sample", "form", "recog" "footer";
+  grid-template-rows: 8% auto 10% auto;
+  grid-template-areas: "header", "sample", "form", "recog";
   grid-row-gap: 60px;
   min-height: 100vh;
   max-width: 100vw;
@@ -74,17 +74,6 @@ header {
   min-height: 500px;
   height: 100%;
   margin-top: 45vh;
-}
-footer{
-  bottom: 0;
-  grid-area: "footer";
-  display: grid;
-  place-items: center;
-  width: 100%;
-  height: 100%;
-}
-footer p{
-  font-size: 1rem;
 }
 
 @media only screen and (min-width: 1025px){
