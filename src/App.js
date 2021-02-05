@@ -60,7 +60,6 @@ class App extends Component {
   }
   onButtonSmash = () => {
     app.models.predict(Clarifai.CELEBRITY_MODEL, this.state.input)
-    //.then(response => console.log(response))
       .then(response => this.setState({solution: response.outputs[0].data.regions[0].data.concepts})
       .catch(err => console.log(err)));
       if(!Images[Images.length -1].startsWith("http")){
@@ -74,7 +73,6 @@ class App extends Component {
   }
 render(){
   const {solution, nudity} = this.state;
-  console.log(Images[Images.length -1].startsWith("http"));
   return (
     <div className="App">
       <header>
