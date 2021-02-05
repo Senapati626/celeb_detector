@@ -51,28 +51,30 @@ class App extends Component {
 
   onButtonClick = () => {
     this.setState({imageUrl: this.state.input});
-    if(Images.indexOf(this.state.input) === -1 && this.state.solution.length !== 0){
-    Images.push(this.state.input);
-    }
     app.models.predict(Clarifai.FACE_DETECT_MODEL, this.state.input)
       .then(response => this.displayFaceBox(this.calculateFaceLocation(response)))
-      .catch(err => console.log(err))
+      .catch(err => console.log(err));
+    if(Images.indexOf(this.state.input) === -1){
+      Images.push(this.state.input);
+      }
   }
   onButtonSmash = () => {
-    this.setState({imageUrl: this.state.input});
     app.models.predict(Clarifai.CELEBRITY_MODEL, this.state.input)
     //.then(response => console.log(response))
       .then(response => this.setState({solution: response.outputs[0].data.regions[0].data.concepts})
-      .catch(err => console.log(err)))
+      .catch(err => console.log(err)));
+      if(!Images[Images.length -1].startsWith("http")){
+        Images.pop();
+        }
   }
   onButtonPress = () => {
-    this.setState({imageUrl: this.state.input});
     app.models.predict(Clarifai.NSFW_MODEL, this.state.input)
       .then(response => this.setState({nudity: response.outputs[0].data.concepts}))  
-      .catch(err => console.log(err))
+      .catch(err => console.log(err));
   }
 render(){
   const {solution, nudity} = this.state;
+  console.log(Images[Images.length -1].startsWith("http"));
   return (
     <div className="App">
       <header>

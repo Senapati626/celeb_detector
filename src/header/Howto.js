@@ -1,6 +1,6 @@
 import React from "react";
 import './howto.css';
-import {FaHeart} from 'react-icons/fa';
+import {FaHeart, FaGithub} from 'react-icons/fa';
 
 class Howto extends React.Component {
   iconClick = () => {
@@ -33,7 +33,7 @@ class Howto extends React.Component {
     return(
         <div className="howto">
             <div className="icon">
-                <div className="icon1"><p onClick={this.iconClick}>{'?'}</p></div>
+                <div className="icon1" data-tool-tip="Click for Help"><p onClick={this.iconClick}>{'?'}</p></div>
             </div>
             <div className="navbar">
                 <div className="icon2"><p onClick={this.icon2Click}>{'x'}</p></div>
@@ -49,6 +49,7 @@ class Howto extends React.Component {
                 <div className="footer">
                   <h3>Designed and developed with <FaHeart/></h3>
                   <p>by Neellohit S.</p>
+                  <a href="https://github.com/Senapati626/celeb_detector"><FaGithub/></a>
                 </div>
                 </div>
             </div>

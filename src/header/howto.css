@@ -76,6 +76,38 @@
     border-radius: 10px;
     backdrop-filter: blur(20px);
 }
+.footer a{
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: black;
+}
+.icon1[data-tool-tip] {
+    position: relative;
+  }
+  
+.icon1[data-tool-tip]::after {
+    content: attr(data-tool-tip);
+    display: block;
+    position: absolute;
+    padding: 1em 1em;
+    color: white;
+    background: black;
+    border-radius: 5px;
+    font-size: 1em;
+    bottom: 0;
+    left: 50px;
+    white-space: nowrap;
+    transform: scale(0);
+    transition:
+      transform ease-out 150ms,
+      bottom ease-out 150ms;
+  }
+  
+.icon1[data-tool-tip]:hover::after {
+    transform: scale(1);
+  }
+  
 @media only screen and (max-width: 992px){
     .icon{
         transform: scale(0.6);
