@@ -20,7 +20,7 @@
     max-width: 200%;
 }
 .imager:hover{
-    filter: grayscale();
+    filter:contrast(110%);
 }
 @media only screen and (min-width: 992px){
     .mt3{

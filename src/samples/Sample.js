@@ -5,6 +5,7 @@ import {IconContext} from 'react-icons';
 import './Sample.css';
 
 const Sample = ({ imageUrl, onSampling }) => {
+    
     return(
         <div className="wrapper">
         <div><p className="para">{'Use Sample Images'}</p></div>
@@ -12,7 +13,7 @@ const Sample = ({ imageUrl, onSampling }) => {
         {Images.map((img,index) => (
             <div
             style={{
-                border: imageUrl === img ? "6px solid rgb(243, 126, 220)" : ""        
+                border: imageUrl === img ? "6px solid #8200ec" : ""        
            }}>
            <img src={img} 
             alt='sample images' 

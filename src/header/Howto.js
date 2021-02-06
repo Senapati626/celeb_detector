@@ -35,6 +35,7 @@ class Howto extends React.Component {
             <div className="icon">
                 <div className="icon1" data-tool-tip="Click for Help"><p onClick={this.iconClick}>{'?'}</p></div>
             </div>
+      
             <div className="navbar">
                 <div className="icon2"><p onClick={this.icon2Click}>{'x'}</p></div>
                 <div><h1>How to use the app</h1></div>

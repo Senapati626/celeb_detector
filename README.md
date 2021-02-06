@@ -41,4 +41,4 @@ You will also see any lint errors in the console.
 
 Happy Hacking.
 
-# designed and developed by Neellohit S.
+### `Designed and Developed by Neellohit S.`
