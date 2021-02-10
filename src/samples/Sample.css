@@ -4,14 +4,17 @@
     display: grid;
     justify-content: center;
     margin: 15px;
+    grid-gap: 20px;
 }
 .para{
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-family: 'Cinzel Decorative', cursive;
     margin-bottom: 15px;
     letter-spacing: 3px;
     text-transform: uppercase;
-    color: rgb(65, 2, 117);
+    background: linear-gradient(to right,#E58CCB,tomato);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .samples{
     display: grid;
@@ -49,7 +52,7 @@
 }
 .selectText p{
     font-size: 1.25rem;
-    background: #bd00ec;
+    background: #D37AFB;
     width: fit-content;
     height: fit-content;
     clip-path: circle();

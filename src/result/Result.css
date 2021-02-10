@@ -3,14 +3,14 @@
     flex-direction: column;
     justify-content: center;
     align-items:center;  
-
+    color: thistle;
 
 }
 .inner-wrapper{
     margin-top: 5rem;
     padding-right: 5rem;
     text-align: center;
-    border-bottom: 5px solid black;
+    border-bottom: 5px solid rgb(248, 96, 253);
     position: relative;
     z-index: 5;
     margin-top: 30vh;
@@ -21,10 +21,12 @@
     font-weight: 800;
     text-transform: uppercase;
     font-family: 'Berkshire Swash', cursive;
-    color: #120224;
     animation: answer 1.5s;
     letter-spacing: 5px;
     margin: 0.5em;
+    background: linear-gradient(to right,#905EA1,#f8a5df);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .prob{
     font-size: 2rem;

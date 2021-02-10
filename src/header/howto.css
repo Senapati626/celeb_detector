@@ -4,7 +4,6 @@
     z-index: 999;
     display: flex;
     flex-direction: row-reverse;
-    margin-top: 12vh;
 }
 .icon{
     margin: 0.8em;
@@ -20,6 +19,7 @@
     align-items: center;
     cursor: pointer;
     transition: transform 0.5s ease-in-out;
+    left: 40%;
     }
 .icon1 p{
     font-size: 2rem;
@@ -45,10 +45,10 @@
     display: grid;
     grid-template-rows: 5% 10% 20% auto;
     grid-row-gap: 1rem;
-    background: linear-gradient(to right,#47ffb8,#4cc093);
+    background: linear-gradient(to right,#4cc093,#A530F2);
     overflow: auto;
     width: 500px;
-    opacity: 0.85;
+    opacity: 0.95;
     padding: 1em;
     transition: all 0.5s;
     border-radius: 10px;

@@ -76,10 +76,11 @@ render(){
   return (
     <div className="App">
       <header>
-        <Header />
+        <div><Header /></div>
+        <div></div>
       </header>
       <Howto />
-      <div className="sample">
+      <div className="sample" id="form">
         <Sample imageUrl={this.state.input} onSampling={this.onSampling}/>
         <div className="or"><p>{'or'}</p></div>
       </div>

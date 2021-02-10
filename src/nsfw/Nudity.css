@@ -9,7 +9,7 @@
     z-index: 6;
     left: 50%;
     top: 0%;
-    margin-top: -24vh;
+    margin-top: -40vh;
 }
 .warning1{
     background: rgba(243, 235, 235, 0.95);
@@ -59,6 +59,6 @@
 
 @media screen and (min-width: 1020px){
     .warning{
-        margin-top: -17vh;
+        margin-top: -35vh;
     }
 }

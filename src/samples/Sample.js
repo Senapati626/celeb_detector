@@ -13,14 +13,14 @@ const Sample = ({ imageUrl, onSampling }) => {
         {Images.map((img,index) => (
             <div
             style={{
-                border: imageUrl === img ? "6px solid #8200ec" : ""        
+                border: imageUrl === img ? "6px solid #D37AFB" : ""        
            }}>
            <img src={img} 
             alt='sample images' 
             className="sampimg"
             onClick={onSampling}
             style={{
-                filter: imageUrl === img ? "grayscale()" : ""
+                filter: imageUrl === img ? "" : "grayscale()"
             }}
             />
             <IconContext.Provider value={{color: "white"}}>
