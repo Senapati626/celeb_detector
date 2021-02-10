@@ -38,8 +38,11 @@
     border-radius: 20px;
     box-shadow: 0 6px #f80958;
     scroll-behavior: smooth;
+    transition: all 250ms ease;
 }
-
+.btn3:hover {
+    letter-spacing: 3px;
+  }
 @media screen and (min-width: 992px){
     .heading1{
         font-size: 3.8rem;
